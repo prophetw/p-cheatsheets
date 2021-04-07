@@ -18,6 +18,7 @@ rsync -auv <src> <dest>
 # destination folder in remoteuser's home directory:
 rsync -avz -e "ssh -p1234" <source> <username>@<host>:<dest>
 
+# http://www.ruanyifeng.com/blog/2020/08/rsync.html
 
 # copy source folder to destination folder  destination/source
 rsync -a source destination
