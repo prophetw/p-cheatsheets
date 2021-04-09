@@ -1,0 +1,5 @@
+# start a server -s = --server  default port is 5201
+iperf3 -s
+
+# connect to a server -c=
+iperf3 -c 192.0.2.1
