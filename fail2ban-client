@@ -1,0 +1,11 @@
+# check enabled service
+sudo fail2ban-client status
+
+# check detail ssh
+sudo fail2ban-client status
+
+# unban an IP 
+$ sudo fail2ban-client set sshd unbanip 23.34.45.56
+
+# ban an IP
+$ sudo fail2ban-client set sshd banip 23.34.45.56

@@ -1,0 +1,15 @@
+
+# command line usage
+# https://github.com/tesseract-ocr/tessdoc/blob/master/Command-Line-Usage.md
+
+# language support 
+# github language https://github.com/tesseract-ocr/tessdoc/blob/master/Data-Files-in-different-versions.md
+# language font download
+# https://github.com/tesseract-ocr/tessdata
+# 下载完成之后把.traineddata字库文件放到tessdata目录下，默认路径是/usr/share/tesseract-ocr/4.00/tessdata
+
+
+tesseract testing/eurotext.tif testing/eurotext-eng -l eng
+
+#--oem 1 for LSTM  --oem 0 for Legacy Tesseract
+tesseract input.tiff output --oem 1 -l eng

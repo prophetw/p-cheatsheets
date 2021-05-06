@@ -1,0 +1,11 @@
+# show all settings
+netsh interface portproxy show all
+
+# show all v4tov4
+netsh interface portproxy show v4tov4
+
+# add settings 
+netsh interface portproxy add v4tov4 listenport=8080 connectaddress=172.20.147.252 connectport=8080
+
+# remove setting
+netsh interface portproxy delete v4tov4 listenport=8080

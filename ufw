@@ -1,0 +1,23 @@
+sudo ufw enable/disable # 防火墙启动/停止
+sudo ufw allow 80 # 允许外部访问 80 端口
+sudo ufw delete allow 80 # 禁止外部访问 80 端口
+sudo ufw reload # 重新加载防火墙
+sudo ufw status # 查看防火墙开放端口
+sudo ufw allow from 192.168.1.1 # 允许此IP访问所有的本机端口
+sudo ufw deny smtp # 禁止外部访问smtp服务
+sudo ufw delete allow smtp # 删除上面建立的某条规则
+sudo ufw defult deny    # 作用：开启了防火墙并随系统启动同时关闭所有外部对本机的访问（本机访问外部正常）
+# show by index number
+sudo ufw status numbered
+# number is ufw status numbered result
+sudo ufw delete 1
+# start ufw Firewall is active and enabled on system startup
+sudo ufw enable
+sudo ufw disable
+# verbose info
+sudo ufw status verbose
+# brief info
+sudo ufw status 
+# app info
+sudo ufw  app list
+
