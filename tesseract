@@ -13,3 +13,6 @@ tesseract testing/eurotext.tif testing/eurotext-eng -l eng
 
 #--oem 1 for LSTM  --oem 0 for Legacy Tesseract
 tesseract input.tiff output --oem 1 -l eng
+
+# multiple languages  diffrent order gives diff result         eng+hin means eng as primary and then hin
+tesseract testing/bilingual.jpg testing/bilingual-enghin -l eng+hin
