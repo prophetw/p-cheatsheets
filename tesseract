@@ -16,3 +16,9 @@ tesseract input.tiff output --oem 1 -l eng
 
 # multiple languages  diffrent order gives diff result         eng+hin means eng as primary and then hin
 tesseract testing/bilingual.jpg testing/bilingual-enghin -l eng+hin
+
+# list support lang
+tesseract --list-langs
+
+# 标准输出 
+tesseract tttt8.png stdout -l chi_sim
