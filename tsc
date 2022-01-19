@@ -1,0 +1,7 @@
+
+#typescript
+# show all compiler options 
+tsc --all 
+-d, --declaration                                  Generates corresponding '.d.ts' file.
+ --declarationDir DIRECTORY                         Output directory for generated declaration files.
+ --declarationMap                                   Generates a sourcemap for each corresponding '.d.ts' file.
